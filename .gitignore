@@ -1,0 +1,7 @@
+logs
+target
+.idea/
+*.bak
+*.swp
+*~
+.idea_modules
