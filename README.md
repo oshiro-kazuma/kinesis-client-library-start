@@ -18,4 +18,7 @@ sbt run -DaccessKeyId=XXX -DsecretAccessKey=XXX
 
 # データ投入
 aws kinesis put-record --stream-name $stream_name --data hogehoge_$RANDOM --partition-key $RANDOM
+
+# 最後にstreamを削除する
+aws kinesis delete-stream --stream-name $stream_name
 ```
